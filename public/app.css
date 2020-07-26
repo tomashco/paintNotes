@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #fbffc3;
+}
+
+/* HEADER STYLES */
+header {
+  text-align: center;
+}
+header h1 {
+  font-size: 64px;
+  font-weight: 300;
+  margin: 80px 0 0;
+  color: #2c3e50;
+}
+header h1 span {
+  font-weight: 700;
+}
+header h2 {
+  color: #bdc3c7;
+}
+
+/* FORM STYLES */
+.form {
+  width: 800px;
+  margin: 50px auto 20px;
+  display: flex;
+  justify-content: center;
+}
+#noteInput {
+  width: 500px;
+  height: 60px;
+  background: none;
+  border: none;
+  /* border-bottom: 1px solid #34495e; */
+  outline: none;
+  font: 300 28px "Ubuntu", sans-serif;
+  padding: 20px;
+  color: #34495e;
+}
+
+/* PAINT CANVAS */
+.picturepanel {
+  display: flex;
+  justify-content: center;
+}
+
+#canvasId {
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+  color: #41403e;
+  outline: none;
+  box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: solid 7px #41403e;
+}
+
+#canvasId:hover {
+  box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
+}
+
+.toolbar {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  margin: 2em auto;
+  align-items: center;
+}
+
+.toolbar a {
+  width: 500px;
+  text-align: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 1.5em auto;
+
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+
+  background-color: #55acee;
+  box-shadow: 0px 5px 0px 0px #3c93d5;
+}
+
+.toolbar a:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+.toolbar a:hover {
+  background-color: #6fc6ff;
+}
+
+/* LIST STYLES */
+.list {
+  width: 100%;
+  margin: 1.5em auto;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.note {
+  width: 26%;
+  height: 100%;
+  font-size: 1.2em;
+  padding: 0 1.5em 1em;
+  color: #34495e;
+  transition: all 0.3s ease;
+  border-radius: 245px 20px 230px 10px/15px 225px 15px 255px;
+  border: solid 3px #41403e;
+}
+.note:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
+.note:hover span {
+  opacity: 1;
+}
+
+.note h3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.note img {
+  width: 100%;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #bdc3c7;
+}
+li span {
+  cursor: pointer;
+  float: right;
+  color: #c0392b;
+  transition: all 0.3s;
+  opacity: 0;
+}
+li span:hover {
+  color: #e74c3c;
+}
