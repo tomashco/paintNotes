@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "./node-modules/.bin/netlify-lambda serve src",
-    "build": "la && ./node-modules/.bin/netlify-lambda build src"
+    "build": "ls -la && ./node-modules/.bin/netlify-lambda build src"
   },
   "repository": {
     "type": "git",
