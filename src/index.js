@@ -1,9 +1,11 @@
+const serverless = require("serverless-http");
+
 var express = require("express"),
   app = express(),
   port = process.env.PORT || 3000,
   bodyParser = require("body-parser");
 
-var paintNotesRoutes = require("./routes/notes.js");
+var paintNotesRoutes = require("../routes/notes.js");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -14,8 +16,10 @@ app.get("/", (req, res) => {
   res.sendFile("index.html");
 });
 
-app.use("/api/notes", paintNotesRoutes);
+app.use("/.netlify/routes/index/notes", paintNotesRoutes);
 
 app.listen(port, () => {
   console.log("Server has started on port" + port);
 });
+
+module.exports.handler = serverless(app);
