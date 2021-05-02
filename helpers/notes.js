@@ -1,4 +1,4 @@
-db = require("../models");
+var db = require("../models/index");
 
 exports.getNotes = (req, res) => {
   db.Note.find()

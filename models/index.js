@@ -6,4 +6,4 @@ mongoose.connect(
 
 mongoose.Promise = Promise;
 
-module.exports.Note = require("./Note");
+module.exports.Note = require("./note");
