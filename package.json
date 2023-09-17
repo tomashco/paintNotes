@@ -21,7 +21,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "mongoose": "^5.9.25",
+    "mongoose": "^5.13.20",
     "netlify-lambda": "^2.0.5",
     "serverless-http": "^2.7.0"
   },
